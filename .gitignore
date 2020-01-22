@@ -1,0 +1,10 @@
+*.DS_Store
+
+# Object files
+*.o
+
+# Executables
+*.exe
+
+# Output artefacts
+build/
