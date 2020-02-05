@@ -1,0 +1,33 @@
+Address     Assembly    Comments
+31          mov R0, 3
+32          mov R1, 4   ; initializing memory cells
+33          mov R2, 23
+34          mov [R0],R2 ; stored dividend in cell 3
+35          mov R2, 4
+36          mov [R1],R2 ; stored divisor in cell 4
+37          mov R2, 0
+38          mov R3,[R1] ; loading divisor to R3
+39          cmp R2, R3
+40          je 59       ; halting program if divisor is zero
+41          mov R4,[R0] ; loading dividend to R4
+42          mov R5, 0   ; counting number times of subtraction with R5
+43          mov R0, 0   ; will try to find the actual dividend with R0
+44          mov R1, R4  ; using R1 to compare later
+45          cmp R2, R4  ; checking to see if R4 reach zero yet
+46          je 51       ; jump if equal to store final answer
+47          sub R4, R3  ; gradually subtracting dividend by divisor
+48          add R0, R3  ; gradually adding divisor to zero
+49          inc R5      ; keep track of how many times subtracting
+50          jmp 45      ; jump back to check if R4 reach zero yet
+51          mov R2, 12  ; initialize memory cell 12
+52          cmp R0, R1  ; compare if R0 is same as original dividend, different if there is remainder
+53          jne 56
+54          mov [R2],R5 ; if same, put R5 in memory cell 12 because no remainders
+55          jmp 59      ; jump to halt
+56          mov R0, 1
+57          sub R5, R0  ; subtracting R5 by 1 to account for remainder
+58          mov [R2],R5 ; store new R5 in memory cell 12
+59          halt
+
+
+Simulator Hex: 900390449097b0029084b0429080c0c18083403bc10091409000a04480844033610350031005202d908c80013038b085203b90016140b0850000
