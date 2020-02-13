@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EC327Lab3Assignment</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+  <style>
+    .topnav{background-color:#f1f1f1;overflow:hidden;position:fixed;width:100%;text-align:center;height:40px;z-index:1}
+    .topnav a{float:none;color:rgba(0,0,0,.75);padding:30px 13px;text-decoration:none;font-size:15px}
+    .topnav a:hover{background-color:#ddd;color:black}
+    .topnav ul{margin:0;padding-top:3px;padding-left:0;display:inline-block;height:100%}
+    .topnav li{display:inline}
+    .topnav>ul>li>a{display:none}
+    :target::before{content:"";display:block;height:60px;margin:-60px 0 0}
+    .stackedit__html{padding-top:20px}
+     @media all and (max-width: 768px) {
+      .topnav{display:none}
+      .stackedit__html{padding-top:0}
+    }
+  </style>
+</head>
+
+<body class="stackedit">
+
+  <div class="topnav">
+<ul>
+<li><a href="#ec327----lab-3-assignment">EC327 – Lab 3 Assignment</a>
+<ul>
+<li><a href="#problem-1----ladder.cpp">Problem 1 – Ladder.cpp</a></li>
+<li><a href="#problem-2----range.cpp">Problem 2 – Range.cpp</a></li>
+<li><a href="#problem-3----divisible.cpp">Problem 3 – Divisible.cpp</a></li>
+</ul>
+</li>
+</ul>
+</div>
+  <div class="stackedit__html"><h1 id="ec327----lab-3-assignment">EC327 – Lab 3 Assignment</h1>
+<p>The goal of Lab 3 is to start problems with no code and solve them using C++ on Linux OS. <strong>Same conditions as Midterm and Final Exam.</strong><br>
+<em>If you still can’t use the lab computers, contact TA or Professor</em></p>
+<p>Accept the Github assignment <a href="https://classroom.github.com/a/5_AqsR68">https://classroom.github.com/a/5_AqsR68</a></p>
+<p>Please choose <strong>1 out of 3 problems</strong> and complete it, then push to Github. You do not need to solve all three problems, but they are good practice.</p>
+<p>Be prepared to explain your solution, and demonstrate that your code compiles/executes on the lab computers.</p>
+<div></div>
+<h2 id="problem-1----ladder.cpp">Problem 1 – Ladder.cpp</h2>
+<p>Create a ladder out of <strong>#</strong> characters (hash)<br>
+Your code should ask user for input <code>How tall is your ladder?</code></p>
+<ul>
+<li>If input equals 0, print <code>The height can't be zero.</code></li>
+<li>If input is less than 0, print <code>Invalid input</code> and exit the program</li>
+<li>If input is greater than 0, draw the ladder as shown below, then ask again <code>How tall is your ladder?</code></li>
+</ul>
+<h3 id="sample-output">Sample output</h3>
+<pre><code>How tall is your ladder? 0
+The height can't be zero.
+How tall is your ladder? 3
+# #
+###
+# #
+How tall is your ladder? 5
+# #
+###
+# #
+###
+# #
+How tall is your ladder? 4
+# #
+###
+# #
+###
+How tall is your ladder? -1
+Invalid input
+</code></pre>
+<h3 id="optional-challenge">Optional challenge</h3>
+<p>Ask the user how wide the ladder is, then make it that wide.</p>
+<pre><code>How tall is your ladder? 3
+How wide is your ladder? 5
+#   #
+#####
+#   #
+</code></pre>
+<div></div>
+<h2 id="problem-2----range.cpp">Problem 2 – Range.cpp</h2>
+<p>Ask the user to input 3 integers <code>start</code>, <code>stop</code>, and <code>step</code>.</p>
+<ul>
+<li>If <code>start</code> is less than <code>stop</code>, print all numbers in ascending order with <code>step</code> as the increment.</li>
+<li>If <code>start</code> is greater than <code>stop</code>, print all numbers in descending order with step as the increment.</li>
+<li>If <code>start</code> is equal to <code>stop</code>, print <code>Bye!</code> then exit the program.</li>
+</ul>
+<h3 id="sample-output-1">Sample output</h3>
+<pre><code>Start = 1
+Stop = 6
+Step = 1
+1, 2, 3, 4, 5, 6
+Start = 1
+Stop = 14
+Step = 3
+1, 4, 7, 10, 13
+Start = 9
+Stop = 0
+Step = 3
+9, 6, 3, 0
+Start = 1
+Stop = 1
+Step = 1
+Bye!
+</code></pre>
+<div></div>
+<h2 id="problem-3----divisible.cpp">Problem 3 – Divisible.cpp</h2>
+<p>Ask the user to put in a positive integer. The program should print all factors of that number, then ask the user again.</p>
+<ul>
+<li>If number is prime, print <code>This number is prime!</code></li>
+<li>If number is negative, print <code>I don't deal with negativity</code> and exit the program</li>
+</ul>
+<p><em>Hint: Look up</em> modulus operator</p>
+<h3 id="sample-output-2">Sample output</h3>
+<pre><code>What number to check? 1
+Factors: 1
+What number to check? 5
+Factors: 1, 5
+This number is Prime!
+What number would you like me to check? 100
+Factors: 1, 2, 4, 5, 10, 20, 25, 50, 100
+What number would you like me to check? -100
+I don't deal with negativity.
+</code></pre>
+<h3 id="optional-challenge-1">Optional Challenge</h3>
+<p>Can you write a program that asks the user for a positive integer <code>n</code>, then from 1 to <code>n</code> in steps of <code>1</code>:</p>
+<ul>
+<li>Prints <code>Foo</code> if a number is divisible by 3</li>
+<li>Prints <code>Bar</code> if divisible by 5</li>
+<li>Prints <code>FooBar</code> if divisible by both 5 and 3</li>
+<li>Prints that number if it is not divisible by either</li>
+</ul>
+<p><em>This is a very common interview question</em></p>
+<pre><code>Enter a number: 16
+1
+2
+Foo
+4
+Bar
+Foo
+7
+8
+Foo
+10
+11
+Foo
+13
+14
+FooBar
+16
+</code></pre>
+</div>
+</body>
+
+</html>
