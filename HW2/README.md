@@ -13,28 +13,28 @@ examples of the output that you need to provide.
 
 * Sample run 1:
 
-  ```none
-  Enter the length of the sequence: <6>
-  0
-  1
-  1
-  2
-  3
-  5
-  ```
+    ```none
+    Enter the length of the sequence: <6>
+    0
+    1
+    1
+    2
+    3
+    5
+    ```
 
 * Sample run 2:
 
-  ```none
-  Enter the length of the sequence: <0>
-  ```
+    ```none
+    Enter the length of the sequence: <0>
+    ```
 
 * Sample run 3:
 
-  ```none
-  Enter the length of the sequence: <x>
-  Error! You did not provide a number.
-  ```
+    ```none
+    Enter the length of the sequence: <x>
+    Error! You did not provide a number.
+    ```
 
 ## Question 2: Simple Calculator
 
@@ -56,31 +56,31 @@ the error conditions listed in the sample runs below, and terminate the program 
 
 * Sample run 1:
 
-  ```none
-  Enter an expression to evaluate: <3 + 5>
-  Result: 8
-  ```
+    ```none
+    Enter an expression to evaluate: <3 + 5>
+    Result: 8
+    ```
 
 * Sample run 2:
 
-  ```none
-  Enter an expression to evaluate: <3 / 0>
-  Error! You can’t divide a number by 0!
-  ```
+    ```none
+    Enter an expression to evaluate: <3 / 0>
+    Error! You can’t divide a number by 0!
+    ```
 
 * Sample run 3:
 
-  ```none
-  Enter an expression to evaluate: <3 % 0>
-  Error! '%' is not a supported operator.
-  ```
+    ```none
+    Enter an expression to evaluate: <3 % 0>
+    Error! '%' is not a supported operator.
+    ```
 
 * Sample run 4:
 
-  ```none
-  Enter an expression to evaluate: <3 + b>
-  Error! You did not provide two numerals as operands.
-  ```
+    ```none
+    Enter an expression to evaluate: <3 + b>
+    Error! You did not provide two numerals as operands.
+    ```
 
 ## Question 3: Guessing Game
 
@@ -97,13 +97,13 @@ To generate a random number, you should use the `srand()` function from the `cst
 
 * Sample run 1:
 
-  ```none
-  Please guess the number: <4>
-  Sorry, your guess is incorrect
+    ```none
+    Please guess the number: <4>
+    Sorry, your guess is incorrect
 
-  Please guess the number: <y>
-  Error! You didn’t insert a number!
+    Please guess the number: <y>
+    Error! You didn’t insert a number!
 
-  Please guess the number: <4569>
-  Congratulations, your guess is correct!
-  ```
+    Please guess the number: <4569>
+    Congratulations, your guess is correct!
+    ```
