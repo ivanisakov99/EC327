@@ -24,4 +24,4 @@ following sample runs for examples of the output that you need to provide.
 
 ### <ins>Problem 2: Simple Calculator</ins>
 Write a C++ program (Q2.cpp) that takes simple, one operand arithmetic operations from the command line and calculates the result. The program should 
-accept signed integers as operands, and support the *****, /, +, - operators. When provided to the command line, operands and operators should be separated by a space, in the following way:
+accept signed integers as operands, and support the *, /, +, - operators. When provided to the command line, operands and operators should be separated by a space, in the following way:
