@@ -24,7 +24,6 @@ int main() {
         } else {
             cout << "Congratulations, your guess is correct!" << endl;
         }
-
     }
 
     return 0;
