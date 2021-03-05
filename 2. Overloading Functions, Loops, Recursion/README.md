@@ -22,5 +22,6 @@ Given two positive integers, it must return their lcm. Implement your lcm functi
 ### <ins>Problem 3: Recursion</ins>
 Write a recursive function *isPrime* to calculate if an unsigned integer is prime. A prime number is defined as a number that is only divisible by one and by 
 itself.
+
 Implement your *isPrime* function in a file named Problem3.cpp. Include the isPrime function only in this file (plus any #includes that the function might need, 
 the appropriate namespace declaration etc.). The *isPrime* function should not check for invalid values (e.g., negative numbers as input)

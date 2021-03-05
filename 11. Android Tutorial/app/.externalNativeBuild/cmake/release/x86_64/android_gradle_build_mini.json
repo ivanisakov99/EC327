@@ -1,0 +1,18 @@
+{
+  "buildFiles": [
+    "/Users/ivanisakov/AndroidStudioProjects/MyApplication/app/../../../Library/Android/sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake",
+    "/Users/ivanisakov/AndroidStudioProjects/MyApplication/app/../../../Library/Android/sdk/ndk/21.0.6113669/build/cmake/platforms.cmake",
+    "/Users/ivanisakov/AndroidStudioProjects/MyApplication/app/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/ivanisakov/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build /Users/ivanisakov/AndroidStudioProjects/MyApplication/app/.externalNativeBuild/cmake/release/x86_64 --target clean"
+  ],
+  "libraries": {
+    "native-lib-Release-x86_64": {
+      "artifactName": "native-lib",
+      "buildCommand": "/Users/ivanisakov/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build /Users/ivanisakov/AndroidStudioProjects/MyApplication/app/.externalNativeBuild/cmake/release/x86_64 --target native-lib",
+      "abi": "x86_64",
+      "output": "/Users/ivanisakov/AndroidStudioProjects/MyApplication/app/build/intermediates/cmake/release/obj/x86_64/libnative-lib.so"
+    }
+  }
+}

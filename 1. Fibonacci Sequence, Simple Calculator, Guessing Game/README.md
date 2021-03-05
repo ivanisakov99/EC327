@@ -3,7 +3,7 @@ Write a C++ program (Problem1.cpp) that takes a positive integer N as input from
 Fibonacci sequence, one per line. The program should check whether the provided input is a number and terminate with an error if is not. See the 
 following sample runs for examples of the output that you need to provide.
 
-*ext in < > in the examples demonstrates the user inputs entered via the keyboard. The actual user inputs should not contain < or > signs.*
+**ext in < > in the examples demonstrates the user inputs entered via the keyboard. The actual user inputs should not contain < or > signs.**
 
     Sample run 1:
     Enter the length of the sequence: <6> 
