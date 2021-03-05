@@ -1,0 +1,23 @@
+
+-----
+Testing Q2a
+
+-----
+Testing Q2b
+
+-----
+Testing Q2c
+13 Josh 99999
+12 Gianluca 54321
+
+-----
+Testing Q2d
+0 1 1
+
+-----
+Testing Q2e
+1
+Caught bad_exception successfully.
+
+-----
+Done!

@@ -1,0 +1,5 @@
+John Doe EC327 A 
+Bruce Wayne EC327 C- 
+Dorothy Gale EC330 A+ 
+Kevin Mitnick EC521 B- 
+John Doe EC330 C+

@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include "Problem1.h"
 
 using namespace std;
 

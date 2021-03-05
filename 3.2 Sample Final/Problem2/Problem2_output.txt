@@ -1,0 +1,24 @@
+
+-----
+Testing Q3a
+
+-----
+Testing Q3b
+1981 Silver Delorean DMC-12 88
+
+-----
+Testing Q3c
+1981 Silver Delorean DMC-12 0
+
+-----
+Testing Q3d
+A Delorean DMC-12 drives
+A Delorean DMC-12 drives
+
+-----
+Testing Q3e
+1981 Silver Delorean DMC-12 88 
+1981 Silver Delorean DMC-12 0 
+
+-----
+Done!

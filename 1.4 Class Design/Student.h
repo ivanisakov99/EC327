@@ -16,7 +16,6 @@ private:
 
 public:
     Student();                  //No Argument Constructor
-    //~Student();                 //Destructor
     Student(string f, string l, int i, float g);    //Constructor
     void setGpa(float g);       //Set GPA
     float getGpa();             //Get GPA

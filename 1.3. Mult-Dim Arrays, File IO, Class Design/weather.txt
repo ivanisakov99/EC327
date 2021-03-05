@@ -1,0 +1,4 @@
+2/28/2019 Boston 27 Snow
+2/28/2019 Miami 72 Sun
+3/1/2019 London 62 Rain
+3/2/2019 Boston 34 Clouds

@@ -1,0 +1,22 @@
+-bash-4.1$ ./a.out
+Type in a grocery item and hit enter to add to the list.
+Alternatively, type "N" and hit enter to exit this program.
+Apple
+Oatmeal
+Banana
+Raspberry
+Apple
+An item with that name is already included in the list!
+Apple
+An item with that name is already included in the list!
+Oatmeal
+An item with that name is already included in the list!
+Duck
+N
+-bash-4.1$ cat grocery_list.txt
+Apple
+Banana
+Duck
+Oatmeal
+Raspberry
+-bash-4.1$

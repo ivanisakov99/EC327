@@ -1,0 +1,5 @@
+Type in a grocery item and hit enter to add to the list.
+Alternatively, type "N" and hit enter to exit this program.
+An item with that name is already included in the list!
+An item with that name is already included in the list!
+An item with that name is already included in the list!

@@ -1,5 +1,6 @@
 #include <fstream>
 #include <string>
+#include "Problem2.h"
 
 using namespace std;
 
