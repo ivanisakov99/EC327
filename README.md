@@ -1,4 +1,4 @@
-# EC327_Software_Engineering
+# EC327 Software Engineering
 ## <ins>Course Description</ins>
 This course aims to introduce students to software design, programming techniques, data structures, and software engineering principles. The course is 
 structured bottom up, beginning with basic hardware followed by an understanding of machine language that controls the hardware and the assembly language 
