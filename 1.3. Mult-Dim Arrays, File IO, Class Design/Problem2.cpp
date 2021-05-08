@@ -1,37 +1,12 @@
-#include <fstream>
+#include <iostream>
 #include <string>
-#include "Problem2.h"
 
+#include "Problem2.h"
 using namespace std;
 
-float weatherProbability(string city, string weather) {
-	string fDate, fCity, fTemp, fWeather;
-	int cityCount = 0;
-	int weatherCount = 0;
+int main(){
 
-	ifstream infile("weather.txt");
+	cout << weatherProbability("Boston", "Snow") << endl;
 
-	if (infile.is_open()) {
-		while (!infile.eof()) {
-			infile >> fDate >> fCity >> fTemp >> fWeather;
-			
-			if (infile.fail()) {
-				break;
-			}
-			if (fCity.compare(city) == 0) {
-				cityCount++;
-				if (fWeather.compare(weather) == 0) {
-					weatherCount++;
-				}
-			}
-		}
-	} 
-	else {
-		return 0;
-	}
-	
-	if (cityCount == 0) {
-		return -1;
-	}
-	else return (float)(weatherCount) / (float)(cityCount);
+	return 0;
 }

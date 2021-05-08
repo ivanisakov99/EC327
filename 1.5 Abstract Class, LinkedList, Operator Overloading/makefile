@@ -5,7 +5,7 @@ TARGET	=  Problem
 
 C_SOURCES =  Problem.cpp
 C_OBJS     = Problem.o
-MY_INCLUDES = mode.h readfile.h
+MY_INCLUDES = Node.h List.h
 
 CCX = g++
 CXXFLAGS = -g -std=c++11  -Wall

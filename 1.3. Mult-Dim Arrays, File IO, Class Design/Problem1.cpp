@@ -1,16 +1,25 @@
 #include <iostream>
-#include <cmath>
 #include "Problem1.h"
 
 using namespace std;
 
-float getNorm(float **matrix, int N){
-	float result = 0;
 
-	for (int i = 0; i < N; i++) {
-		for (int j = 0; j < N; j++) {
-			result += matrix[i][j] * matrix[i][j];
+int main() {
+
+	int DIM = 10;
+
+	float **arr = new float*[DIM];
+	for (int i = 0; i < DIM; i++) {
+		arr[i] = new float[DIM];
+	}
+
+	for (int i = 0; i < DIM; i++) {
+		for (int j = 0; j < DIM; j++) {
+			arr[i][j] = i*j*1.3;
 		}
-	} 
-	return sqrt(result);
+	}
+
+	cout << getNorm(arr, DIM) << endl;
+
+	return 0;
 }

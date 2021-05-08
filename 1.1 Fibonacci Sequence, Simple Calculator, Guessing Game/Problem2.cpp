@@ -6,14 +6,18 @@ int main() {
     int first, second;
     char op;
 
+    // Getting the input
     cout << "Enter an expression to evaluate: ";
     cin >> first >> op >> second;
 
-    if (cin.fail()) {
+    // Error checking
+    if(cin.fail()){
         cout << "Error! You did not provide two numerals as operands." << endl;
-    } else if (op == '/' && second == 0) {
+    }
+    else if(op == '/' && second == 0){
         cout << "Error! You can't divide a number by 0!" << endl;
-    } else {
+    }
+    else{
         switch (op) {
             case '*':
                 cout << "Result: " << (first * second) << endl;

@@ -1,20 +1,21 @@
-#include "Problem1.h"
 #include <iostream>
+#include <string>
+#include "Problem1.h"
 
 using namespace std;
 
-// Returns true if characters in the string are ordered according to the ASCII character table 
-// (from lower to higher values), and false otherwise.
-bool isOrdered(string s){
-    for(int i = 0; i < s.size(); i++){
-        if(s[i] > s[i + 1]){
-            return false;
-        }
-    }
-    return true;
-}
+int main() {
+    string s1 = "abcd", s2 = "zcad";
+    unsigned int i = 1234;
 
-// Returns true if the digits in the number are in increasing order, and false otherwise.
-bool isOrdered(unsigned int i){
-    return isOrdered(to_string(i));
+    cout << "Testing isOrdered(string) ..." << endl;
+    cout << isOrdered(s1) << endl;
+
+    cout << "Testing isOrdered(string) ..." << endl;
+    cout << isOrdered(s2) << endl;
+
+    cout << "Testing isOrdered(unsigned int) ..." << endl;
+    cout << isOrdered(i) << endl;
+
+    return 0;
 }

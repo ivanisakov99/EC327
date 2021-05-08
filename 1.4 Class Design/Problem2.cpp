@@ -22,7 +22,6 @@ int main(){
     Course c2 = Course(c1);
 
     c2.getStudents();
-    cout << "dropping one" << endl;
 
     c2.dropStudent("Bruce Wayne");
     c2.dropStudent("Jane Doe");

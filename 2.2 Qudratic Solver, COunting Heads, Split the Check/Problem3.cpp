@@ -1,7 +1,7 @@
 #include <iostream>
 #include "cashier.h"
-using namespace std;
 
+using namespace std;
 
 int main(){
     char q = 'y', item = 'f';

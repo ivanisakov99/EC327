@@ -13,11 +13,12 @@ int main(){
   	int counter;
   	int *ptr;
 
+	int *o = ec327_lab6();
 
-  	for (counter=0; counter < 13; counter++){
-  		ptr = (int *)malloc(sizeof(int) * 47);//This allocated 188 bytes of memory 13 different times, the ptr pointer was overwritten and there was a memory leak. It now is being freed after the memory block is allocated.
+  	for(counter = 0; counter < 13; counter++){
+  		ptr = (int*)malloc(sizeof(int) * 47);//This allocated 188 bytes of memory 13 different times, the ptr pointer was overwritten and there was a memory leak. It now is being freed after the memory block is allocated.
 		free(ptr);
 	}
-	int* o = ec327_lab6();
+	
   	return 0;
 }

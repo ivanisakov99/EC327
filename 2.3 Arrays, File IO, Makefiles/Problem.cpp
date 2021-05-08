@@ -6,31 +6,32 @@
 #include "mode.h"
 using namespace std;
 
-void printModes(int input[], int size,  int frequency, int result[], int result_count)
-{
+void printModes(int input[], int size,  int frequency, int result[], int result_count){
     cout << "Input: ";
-    for(int i = 0; i < size; i++)
-	{
+
+    for(int i = 0; i < size; i++){
         cout << input[i];
-        if (i != size -1)
-            cout << ", ";
+
+        if (i != size -1){
+        	cout << ", ";
+		}
     }
     cout << endl;
 	
     cout << "Modes: ";
-    for(int i = 0 ; i < result_count; i++)
-	{
+    for(int i = 0 ; i < result_count; i++){
         cout << result[i];
-        if (i != result_count -1)
+
+        if (i != result_count -1){
             cout << ", ";
+		}
     }
     cout << endl;
 	
     cout << "Frequency : " << frequency << endl;
 }
 
-int main()
-{
+int main(){
 	const int NUM_TERMS = 10;
 	int input[NUM_TERMS], result[NUM_TERMS];
 	int result_frequency, result_count;

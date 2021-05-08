@@ -9,14 +9,14 @@ double getAverage(int arr[], int size);
 void changeValue(int* nums, int new_value, int index);
 
 
-int main() {
+int main(){
 	
 	int nums[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 	int nums_size = sizeof(nums)/sizeof(int); //this gave the number of bytes, so needed to divide by number of bytes that an integer. used step & print and where full
 
-	int * o = odds(nums, nums_size);
+	int *o = odds(nums, nums_size);
 	cout << "ODD NUMBERS: " << endl;
-	for (int i = 0; i < 10; i++) {
+	for(int i = 0; i < 10/2; i++){
 		cout << *(o + i) << endl;
 	}
 
@@ -33,7 +33,7 @@ int main() {
 	
 	changeValue(nums, 2343, 6);
 	cout << "NEW VALUE INSERTED: " << endl;
-	for (int i = 0; i < 10; i++) {
+	for(int i = 0; i < 10; i++){
 		cout << *(nums + i) << endl;
 	}
 	
