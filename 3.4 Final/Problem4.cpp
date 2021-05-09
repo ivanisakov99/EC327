@@ -9,10 +9,9 @@ int main(int argc, char * argv[]) {
 	// 4a
 	map< int, string> m;
 	
-
 	// 4b
 	while(true){
-		int isbn, counter = 0;
+		int isbn;
 		string book;
 		
 		cout << "Type in the details for a book and hit enter to add to the catalog." << endl;
@@ -23,18 +22,17 @@ int main(int argc, char * argv[]) {
 		if(isbn == -1){
 			break;
 		}
+		
 		for(map<int, string>::iterator iter = m.begin(); iter != m.end(); iter++){
 			if(isbn == iter->first){
 				cout << "A book with that ISBN is already in the library!" << endl;
-				counter++;
+				continue;
 			}
-		}
-		if(counter == 1){
-			continue;
 		}
 
 		cout << "Insert the book's title: " << endl;
 		cin >> book;
+		
 		m.insert(pair<int, string>(isbn, book));
 	}
 
