@@ -1,13 +1,12 @@
-#include <iostream>
-#include "Q2.h"
-
-using namespace std;
+#ifndef Problem2_h
+#define Problem2_h
 
 int* merge(int* a1,int* a2, int size1, int size2){
     int* mArray = new int [size1 + size2];
     int i = 0, j = 0, z = 0;
-    while(i <= size1 || j <= size2){
-        if ((a1[i] <= a2[j]) && i <= size1){
+
+    while(i < size1 || j < size2){
+        if (i < size1 && (a1[i] <= a2[j])){
             mArray[z] = a1[i];
             i++;
         }
@@ -19,3 +18,5 @@ int* merge(int* a1,int* a2, int size1, int size2){
     }
     return mArray;
 }
+
+#endif

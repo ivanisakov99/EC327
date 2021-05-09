@@ -1,5 +1,6 @@
 #include <iostream>
-#include "Q3.h"
+#include "Problem3.h"
+
 using namespace std;
 
 int main() {
