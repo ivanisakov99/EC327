@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include "Employee.h"
-#include "Q3.h"
+#include "Problem2.h"
 
 using namespace std;
 
