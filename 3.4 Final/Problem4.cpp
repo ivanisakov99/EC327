@@ -3,21 +3,14 @@
 #include <map>
 #include <string>
 
-// Include any additional libraries you'd like up here...
-// Remember your must use map as your primary data structure!
-
 using namespace std;
 
-// Define any helper functions you like up here...
-
-
-
 int main(int argc, char * argv[]) {
-	// Q5a
+	// 4a
 	map< int, string> m;
 	
 
-	// Q5b
+	// 4b
 	while(true){
 		int isbn, counter = 0;
 		string book;
@@ -45,7 +38,7 @@ int main(int argc, char * argv[]) {
 		m.insert(pair<int, string>(isbn, book));
 	}
 
-	// Q5c
+	// 4c
 	ofstream output;
 	output.open("library_list.txt", ofstream::out);
 	for(map<int, string>::iterator iter = m.begin(); iter != m.end(); iter++){

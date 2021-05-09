@@ -1,0 +1,7 @@
+2/24/2019 Boston 15
+2/25/2019 Boston 18
+2/26/2019 Boston 30
+2/27/2019 Boston 37
+2/24/2019 Phoenix 72
+2/25/2019 Sacramento 60
+2/26/2019 Chicago 5

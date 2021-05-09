@@ -1,13 +1,53 @@
-#ifndef Q3_H
-#define Q3_H
+#ifndef Problem2_h
+#define Problem2_h
 
 #include <string>
 #include <iostream>
-#include "Employee.h"
 
 using namespace std;
 
-class Manager: public Employee{
+class Employee {
+  protected:
+    string name;
+    float payRate;
+  public:
+    Employee();
+    Employee(string theName, float thePayRate);
+    string getName() const;
+    float getPayRate() const;
+    float pay(float hoursWorked)const;
+    void printInfo();
+};
+
+
+Employee::Employee(){
+  name = "";
+  payRate = 0;
+}
+
+Employee::Employee(string theName, float thePayRate) {
+  this->name = theName;
+  this->payRate = thePayRate;
+}
+
+string Employee::getName() const {
+  return this->name;
+}
+
+float Employee::getPayRate() const{
+  return this->payRate;
+}
+
+float Employee::pay(float hoursWorked)const {
+  return hoursWorked * this->payRate;
+}
+
+void Employee::printInfo() {
+  cout << "Name: " << this->name << endl;
+  cout << "Pay Rate: " << this->payRate << endl;
+}
+
+class Manager : public Employee{
   private:
     bool isSalaried;
     float salary;
@@ -23,6 +63,7 @@ class Manager: public Employee{
 };
 
 Manager::Manager(){
+
 }
 
 Manager::Manager(string theName, float pay, bool isSalaried){
@@ -55,7 +96,7 @@ float Manager::pay(float hoursWorked){
     if(isSalaried == true){
         return salary;
     }else{
-        return hoursWorked * payRate;
+        return hoursWorked * getPayRate();
     }
 }
 

@@ -1,7 +1,7 @@
 .SUFFIXES:
 .SUFFIXES: .o .cpp
 #============================================================
-TARGET	=  Problem1 Problem2 Problem3 Problem4 Problem5 Problem6 Problem7 
+TARGET	=  Problem1 Problem2 Problem3 Problem4 
 
 C_SOURCES =  Problem1.cpp Problem2.cpp Problem3.cpp Problem4.cpp 
 C_OBJS     = Problem1.o Problem2.o Problem3.o Problem4.o 

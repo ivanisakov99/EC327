@@ -6,7 +6,7 @@ using namespace std;
 int main(int argc, char * argv[]) {
 	string delim = "\n-----\n";
 
-	cout << delim << "Testing Q4a" << endl;
+	cout << delim << "Testing 3a" << endl;
 
 	Complex c1(3,-5);
 	Complex c2;
@@ -16,11 +16,11 @@ int main(int argc, char * argv[]) {
 
 	cout << c1.getA() << " " << c1.getB() << endl;
 	
-	cout << delim << "Testing Q4b" << endl;
+	cout << delim << "Testing 3b" << endl;
 
 	cout << c1.toString() << endl;
 	
-	cout << delim << "Testing Q4c" << endl;
+	cout << delim << "Testing 3c" << endl;
 
 	Complex c3;
 

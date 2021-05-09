@@ -89,7 +89,7 @@ int Rectangle::getArea(){
 }
 
 int Rectangle::getPerimeter(){
-    return width + height;
+    return 2*(width + height);
 }
 
 bool Rectangle::checkOverlap(Rectangle& r2){
