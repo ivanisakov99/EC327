@@ -1,23 +1,28 @@
 #ifndef COUNTHEADS_H
 #define COUNTHEADS_H
 
-int choose(int n, int k){
-    int ans = 0;
+using namespace std;
+
+int factorial(int n){
+    if(n > 1){
+        return n * factorial(n - 1);
+    }
+    else{
+        return 1;
+    }
+}
+long int choose(int n, int k){
     if(n < k){
         return 0;
     }
-    int x = 1, y = 1, w = 1;
-    for(int i = 1; i <= n; i++){
-        x = x * i;
-    }
-    for(int i = 1; i <= k; i++){
-        y = y * i;
-    }
-    for(int i = 1; i <= (n-k); i++){
-        w = w * i;
-    }
-    ans = x / (y * w);
-    return ans;
+
+    long int x = factorial(n);
+
+    long int y = factorial(k);
+
+    long int z = factorial(n - k);
+    
+    return x / (y * z); 
 }
 
 #endif

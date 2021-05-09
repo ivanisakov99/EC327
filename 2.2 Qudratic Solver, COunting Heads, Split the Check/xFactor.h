@@ -1,75 +1,59 @@
 #ifndef XFACTOR_H
 #define XFACTOR_H
 
+using namespace std;
+
 double sqrt(double n, double tol){
-    double x = 0, min = 0, p = 1;
-    if(n <= 0){
-        return 0;
+    if(n < 0){
+        n = -n;
     }
-
-    double y = (p + n/p)/2;
-    double z = 1000;
     
-    while (tol < z){
-        x = y - n/y;
-        
-        if (x < 0){
-            x = -x;
-        }
-        
-        if(p <= (n/p)){
-            min = p;
-        }
-        else{
-            min = n/p;
-        }
-        
-        z = x / min;
-        
-        y = (y + n/y)/2;
-        
-        p++;
-    }
+    double p = 1;
+    p = 0.5*(p + n/p);
 
-    return y;
+    while(tol < abs(p - n/p) / min(p, n/p)){
+        p = 0.5*(p + n/p);
+    }
+    
+    return p;
 }
 
 double pos_x(int a, int b, int c, double tol){
-    double x = 0, y1 = 0, y2 = 0, n = 0;
+    double x = 0,  n = 0;
     
-    n = b*b - 4*a*c;
+    n = b*b - 4 * a * c;
     
     x = sqrt(n, tol);
     
-    y1 = (-b + x)/(2*a);
+    x = (-b + x)/(2*a);
     
-    y2 = (-b - x)/(2*a);
-    
-    if(y1 > y2){
-        return y1;
+    if(n >= 0){
+        cout << "x = (" << x << ", ";
     }
     else{
-        return y2;
+        cout << "x = (" << x << "i, ";
     }
+
+    return x;
 }
 
 double neg_x(int a, int b, int c, double tol){
-    double x = 0, y1 = 0, y2 = 0, n = 0;
+    double x = 0, n = 0;
     
-    n = b*b - 4*a*c;
+    n = b*b - 4 * a * c;
     
     x = sqrt(n, tol);
     
-    y1 = (-b + x)/(2*a);
+    x = (-b - x)/(2*a);
     
-    y2 = (-b - x)/(2*a);
-    
-    if(y1 < y2){
-        return y1;
+    if(n >= 0){
+        cout << x << ")" << endl;
     }
     else{
-        return y2;
+        cout << x << "i)" << endl;
     }
+
+    return x;
 }
 
 #endif

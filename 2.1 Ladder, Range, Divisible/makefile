@@ -1,10 +1,10 @@
 .SUFFIXES:
 .SUFFIXES: .o .cpp
 #============================================================
-TARGET	=  Problem1 Problem2 Problem3
+TARGET	=  Problem1 Problem2 Problem3 Problem3_Optional
 
-C_SOURCES =  Problem1.cpp Problem2.cpp Problem3.cpp
-C_OBJS     = Problem1.o Problem2.o Problem3.o
+C_SOURCES =  Problem1.cpp Problem2.cpp Problem3.cpp Problem3_Optional.cpp
+C_OBJS     = Problem1.o Problem2.o Problem3.o Problem3_Optional.o
 
 CCX = g++
 CXXFLAGS = -g -std=c++11  -Wall
@@ -22,6 +22,9 @@ Problem2 :   Problem2.o
 	$(CCX) $(CXXFLAGS)  $^ $(LIBDIRS)  -o $@
 
 Problem3 :   Problem3.o
+	$(CCX) $(CXXFLAGS)  $^ $(LIBDIRS)  -o $@
+
+Problem3_Optional :   Problem3_Optional.o
 	$(CCX) $(CXXFLAGS)  $^ $(LIBDIRS)  -o $@
 
 # Implicit rules: $@ = target name, $< = first prerequisite name, $^ = name of all prerequisites

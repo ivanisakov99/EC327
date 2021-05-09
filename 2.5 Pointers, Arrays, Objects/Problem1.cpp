@@ -16,11 +16,10 @@ int main(){
             cin >> a[i];
         }
 
-        bool x = contains_a_negative_radii(a);
-        if(x){
+        if(!contains_a_negative_radii(a)){
             area_and_circ(area, circumference, a);
         }else{
-
+            cout << "Contains a negative radius. Bye! Bye!" << endl;
             return 0;
         }
     }

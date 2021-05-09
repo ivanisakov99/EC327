@@ -8,6 +8,9 @@ int main() {
     char ans;
     int a = 0, b = 0, c = 0;
     double tol = 0, posx = 0, negx = 0;
+
+
+
     
     do{
         cout << "Input quadratic coefficients (a, b, c): ";
@@ -18,8 +21,6 @@ int main() {
         
         posx = pos_x(a, b, c, tol);
         negx = neg_x(a, b, c, tol);
-        
-        cout << "x = (" << posx << ", " << negx << ")" << endl;
         
         cout << "Again? (y/n) ";
         cin >> ans;

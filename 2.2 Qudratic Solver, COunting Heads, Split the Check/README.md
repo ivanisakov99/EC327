@@ -1,14 +1,5 @@
 ### <ins>Problem 1: Quadratic Solver</ins>
 
-Create three files:
-
-* Problem1.cpp
-    * Contains the main function
-* xFactor.h
-    * Contains the function prototypes (declaration)
-* xFactor.cpp
-    * Contains the function body (implementation)
-
 **You cannot use <cmath> library**
 
 To approximate the square root of *n*, where *p* is your guess,
@@ -51,14 +42,6 @@ Use the above formula in addition to the quadratic formula to solve for the posi
 See if you can implement this for square root of a negative number.
 
 ### <ins>Problem2: Counting Heads</ins>
-Create three files:
-
-* Problem2.cpp
-    * Contains the main function
-* countHeads.h
-    * Contains the function prototypes (declaration)
-* countHeads.cpp
-    * Contains the function body (implementation)
 
 Given n coin flips, the number of ways to get k heads is,
 

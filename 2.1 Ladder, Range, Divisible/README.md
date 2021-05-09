@@ -10,7 +10,8 @@ Your code should ask user for input
         The height can't be zero.
 * If input is less than 0, print 
 
-        Invalid input and exit the program
+        Invalid input 
+    and exit the program
         
 * If input is greater than 0, draw the ladder as shown below, then ask again 
 
