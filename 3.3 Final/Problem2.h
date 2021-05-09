@@ -1,21 +1,38 @@
-#include <iostream>
+#ifndef Q3_H
+#define Q3_H
+
 #include <string>
-#include "Problem2.h"
+#include <iostream>
 #include "Employee.h"
+
 using namespace std;
 
+class Manager: public Employee{
+  private:
+    bool isSalaried;
+    float salary;
+  public:
+    Manager();
+    Manager(string theName, float pay, bool isSalaried);
+    void setIsSalaried(bool s);
+    bool getIsSalaried();
+    void setSalary(float salary);
+    float getSalary();
+    float pay(float hoursWorked);
+    friend ostream& operator<<(ostream &out, Manager& m);
+};
 
 Manager::Manager(){
 }
 
 Manager::Manager(string theName, float pay, bool isSalaried){
     this->name = theName;
-  this->isSalaried = isSalaried;
-  if(isSalaried == true){
+    this->isSalaried = isSalaried;
+    if(isSalaried == true){
       salary = pay;
-  }else{
+    }else{
       payRate = pay;
-  }
+    }
 }
 
 void Manager::setIsSalaried(bool s){
@@ -50,3 +67,5 @@ ostream& operator<<(ostream& out, Manager& m){
     }
     return out;
 }
+
+#endif
