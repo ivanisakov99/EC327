@@ -28,6 +28,5 @@ Problem3 :   Problem3.o
 # Implicit rules: $@ = target name, $< = first prerequisite name, $^ = name of all prerequisites
 #============================================================
 
-
 clean:
 	rm -f $(TARGET) $(C_OBJS) core *~
