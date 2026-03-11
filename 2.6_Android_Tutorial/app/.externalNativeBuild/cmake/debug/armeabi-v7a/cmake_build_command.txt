@@ -1,0 +1,20 @@
+Executable : /Users/ivanisakov/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake
+arguments : 
+-H/Users/ivanisakov/AndroidStudioProjects/MyApplication/app
+-B/Users/ivanisakov/AndroidStudioProjects/MyApplication/app/.externalNativeBuild/cmake/debug/armeabi-v7a
+-DANDROID_ABI=armeabi-v7a
+-DANDROID_PLATFORM=android-16
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/ivanisakov/AndroidStudioProjects/MyApplication/app/build/intermediates/cmake/debug/obj/armeabi-v7a
+-DCMAKE_BUILD_TYPE=Debug
+-DANDROID_NDK=/Users/ivanisakov/Library/Android/sdk/ndk/21.0.6113669
+-DCMAKE_CXX_FLAGS=
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a
+-DCMAKE_SYSTEM_VERSION=16
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_ANDROID_NDK=/Users/ivanisakov/Library/Android/sdk/ndk/21.0.6113669
+-DCMAKE_TOOLCHAIN_FILE=/Users/ivanisakov/Library/Android/sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake
+-G Ninja
+-DCMAKE_MAKE_PROGRAM=/Users/ivanisakov/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
+jvmArgs : 
+
