@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- strings.xml is where all the values of the strings used in your views are stored.
+    They are referenced in the .xml files, which are subsequently used in your code (.java files) -->
+
+    <string name="app_name">TipCalculator</string>
+
+    <!-- Main.xml Strings -->
+    <string name="enter_bill">Enter the total bill amount: </string>
+
+    <!-- have the students correct the string -->
+    <string name="select_tip">Select atpi amount: </string>
+    <string name="button_10">10%</string>
+    <string name="button_15">15%</string>
+    <string name="button_20">20</string>
+
+    <!-- Result.xml Strings -->
+    <string name="tip_amount">Your tip is: </string>
+    <string name="total_amount">Your new total is: </string>
+    <string name="button_finished">Finished</string>
+
+    <!--  Error Strings -->
+    <string name="error_et">Oops! Please enter a value as your total bill.</string>
+
+</resources>

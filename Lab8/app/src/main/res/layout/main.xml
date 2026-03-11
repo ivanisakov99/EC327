@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/text_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/enter_bill"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_prompt"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/tip20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_20"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/tip15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_15"
+        android:layout_above="@+id/tip20"/>
+
+    <Button
+        android:id="@+id/tip10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_10"
+        android:layout_above="@+id/tip15"/>
+
+    <TextView
+        android:id="@+id/tip_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/select_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tip10"/>
+
+</RelativeLayout>
