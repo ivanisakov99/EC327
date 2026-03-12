@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:text="@string/button_10" 
         android:layout_above="@+id/tip15"/>
-    
+
     <TextView
         android:id="@+id/tip_prompt"
         android:layout_width="wrap_content"

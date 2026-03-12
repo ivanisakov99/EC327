@@ -3,15 +3,15 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "org.academicode.tipcalculator"
+        applicationId 'org.academicode.tipcalculator'
         minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        versionName '1.0'
+        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
         externalNativeBuild {
             cmake {
-                cppFlags ""
+                cppFlags ''
             }
         }
     }
@@ -23,7 +23,7 @@ android {
     }
     externalNativeBuild {
         cmake {
-            path "CMakeLists.txt"
+            path 'CMakeLists.txt'
         }
     }
 }
