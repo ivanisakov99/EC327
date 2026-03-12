@@ -9,10 +9,11 @@
     <string name="enter_bill">Enter the total bill amount: </string>
 
     <!-- have the students correct the string -->
-    <string name="select_tip">Select atpi amount: </string>
+    <string name="select_tip">Select a tip amount: </string>
+    <string name="button_5">5%</string>
     <string name="button_10">10%</string>
     <string name="button_15">15%</string>
-    <string name="button_20">20</string>
+    <string name="button_20">20%</string>
 
     <!-- Result.xml Strings -->
     <string name="tip_amount">Your tip is: </string>

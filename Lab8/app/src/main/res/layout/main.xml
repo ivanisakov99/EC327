@@ -46,6 +46,13 @@
         android:text="@string/button_10"
         android:layout_above="@+id/tip15"/>
 
+    <Button
+        android:id="@+id/tip5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_5"
+        android:layout_above="@+id/tip10"/>
+
     <TextView
         android:id="@+id/tip_prompt"
         android:layout_width="wrap_content"
@@ -53,6 +60,6 @@
         android:textSize="20sp"
         android:text="@string/select_tip"
         android:layout_centerHorizontal="true"
-        android:layout_above="@+id/tip10"/>
+        android:layout_above="@+id/tip5"/>
 
 </RelativeLayout>

@@ -31,10 +31,12 @@ public class MainActivity extends Activity implements OnClickListener {
     private EditText et;
 
     // Creating button objects, which extend (inherit) the View class
+    private Button button5;
     private Button button10;
     private Button button15;
     private Button button20;
 
+    private static final double TIP_5 = 0.05D;
     private static final double TIP_10 = 0.10D;
     private static final double TIP_15 = 0.15D;
     private static final double TIP_20 = 0.20D;
@@ -56,6 +58,7 @@ public class MainActivity extends Activity implements OnClickListener {
         et = (EditText) findViewById(R.id.editText1);
 
         // The buttons have parameters corresponding to the IDs in Main.xml
+        button5 = (Button) findViewById(R.id.tip5);
         button10 = (Button) findViewById(R.id.tip10);
         button15 = (Button) findViewById(R.id.tip15);
         button20 = (Button) findViewById(R.id.tip20);
@@ -65,6 +68,7 @@ public class MainActivity extends Activity implements OnClickListener {
          * button class to start a new activity/intent when pressed. In this
          * case, pressing a button will go to the results page.
          */
+        button5.setOnClickListener(this);
         button10.setOnClickListener(this);
         button15.setOnClickListener(this);
         button20.setOnClickListener(this);
@@ -83,6 +87,9 @@ public class MainActivity extends Activity implements OnClickListener {
         // The switch statements grab the id values of the button pressed and
         // calculates the tip accordingly
         switch (v.getId()) {
+            case R.id.tip5:
+                tipPercent = TIP_5;
+                break;
             case R.id.tip10:
                 tipPercent = TIP_10;
                 break;
