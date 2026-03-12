@@ -29,22 +29,29 @@
         android:id="@+id/tip20"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_20" 
+        android:text="@string/button_20"
         android:layout_alignParentBottom="true"/>
 
     <Button
         android:id="@+id/tip15"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_15" 
+        android:text="@string/button_15"
         android:layout_above="@+id/tip20"/>
 
     <Button
         android:id="@+id/tip10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_10" 
+        android:text="@string/button_10"
         android:layout_above="@+id/tip15"/>
+
+    <Button
+        android:id="@+id/tip5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_5"
+        android:layout_above="@+id/tip10"/>
 
     <TextView
         android:id="@+id/tip_prompt"
@@ -53,6 +60,6 @@
         android:textSize="20sp"
         android:text="@string/select_tip"
         android:layout_centerHorizontal="true"
-        android:layout_above="@+id/tip10"/>
+        android:layout_above="@+id/tip5"/>
 
 </RelativeLayout>

@@ -6,10 +6,6 @@
  * Spring 2015
  *****************************************************************************************/
 package org.academicode.tipcalculator;
-/*
- * This is the results page that is displayed after you the onClick is called
- * from Main.java
- */
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -18,6 +14,10 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
+/*
+ * This is the results page that is displayed after you the onClick is called
+ * from Main.java
+ */
 public class Result extends Activity {
 
     // Initializes TextViews to display total and tip

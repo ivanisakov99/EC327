@@ -27,8 +27,8 @@
             android:text="@string/total_amount"
             android:textSize="20sp" />
     </LinearLayout>
-    
-    <Button 
+
+    <Button
         android:id="@+id/confirm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
