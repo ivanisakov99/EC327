@@ -45,7 +45,7 @@ Contains a negative radius. Bye Bye!
 Your job is to edit the provided `Person.cpp` file to create the person constructor (follow the hints in the
 comments and `Person.h` file), as well as implement its 3 member functions:
 
-* ```c
+* ```cpp
   int calc_takehome_pay()
   ```
 
@@ -59,7 +59,7 @@ comments and `Person.h` file), as well as implement its 3 member functions:
   Else if the `Person` makes less than `P1`, `P1` is an enemy. Sets `P1` to be the persons enemy or buddy based
   on this calculation.
 
-* ```c
+* ```cpp
   void print_status()
   ```
 
