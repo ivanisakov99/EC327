@@ -52,7 +52,7 @@ comments and `Person.h` file), as well as implement its 3 member functions:
   Calculates the post-tax income: `takehome_pay = income - tax_rate * income`
 
 * ```cpp
-  void enemy_or_buddy(Person *P1)
+  void enemy_or_buddy(Person* P1)
   ```
 
   Determines if `P1` is an enemy or friend. If the `Person` makes the same or more than `P1`, `P1` is a friend.
