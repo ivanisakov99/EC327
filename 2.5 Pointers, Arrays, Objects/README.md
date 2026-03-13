@@ -4,17 +4,17 @@
 
 Implement the following functions:
 
-* ```cpp
-  void area_and_circ(float* area, float* circumference, float* array)
-  ```
+```cpp
+void area_and_circ(float* area, float* circumference, float* array)
+```
 
   This function takes as input the array of radii and returns an array of areas and an array of circumferences
   of circles with the input radii. Think about why we need to pass pointers for both the area and the
   circumference variables.
 
-* ```cpp
-  bool contains_a_negative_radii(float* array)
-  ```
+```cpp
+bool contains_a_negative_radii(float* array)
+```
 
   This function takes as input the array of radii and returns true if the input array contains one or more
   negative values and false otherwise.
@@ -45,23 +45,23 @@ Contains a negative radius. Bye Bye!
 Your job is to edit the provided `Person.cpp` file to create the person constructor (follow the hints in the
 comments and `Person.h` file), as well as implement its 3 member functions:
 
-* ```cpp
-  int calc_takehome_pay()
-  ```
+```cpp
+int calc_takehome_pay()
+```
 
   Calculates the post-tax income: `takehome_pay = income - tax_rate * income`
 
-* ```cpp
-  void enemy_or_buddy(Person* P1)
-  ```
+```cpp
+void enemy_or_buddy(Person* P1)
+```
 
   Determines if `P1` is an enemy or friend. If the `Person` makes the same or more than `P1`, `P1` is a friend.
   Else if the `Person` makes less than `P1`, `P1` is an enemy. Sets `P1` to be the persons enemy or buddy based
   on this calculation.
 
-* ```cpp
-  void print_status()
-  ```
+```cpp
+void print_status()
+```
 
   Prints out the Person's enemy's and buddy's name if it has one, otherwise print `No buddy!` or `No enemy`.
 
