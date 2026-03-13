@@ -16,8 +16,8 @@ void area_and_circ(float* area, float* circumference, float* array)
 bool contains_a_negative_radii(float* array)
 ```
 
-> This function takes as input the array of radii and returns true if the input array contains one or more
-> negative values and false otherwise.
+> This function takes as input the array of radii and returns `true` if the input array contains one or more
+> negative values and `false` otherwise.
 
 The `main` function should read the 3 floating-point numbers (3 radii) from the user and store it in an array,
 and then call the `contains_a_negative_radii` function. If the function returns `false`, call `area_and_circ`
@@ -63,7 +63,7 @@ void enemy_or_buddy(Person* P1)
 void print_status()
 ```
 
-> Prints out the Person's enemy's and buddy's name if it has one, otherwise print `No buddy!` or `No enemy`.
+> Prints out the Person's enemy's and buddy's name if it has one, otherwise print `No buddy!` or `No enemy!`.
 
 You should use the following constructor prototype:
 
@@ -71,5 +71,5 @@ You should use the following constructor prototype:
 Person(int income, double tax_rate, string name);
 ```
 
-Your main function in `P2.cpp` should create 2 People and run the `enemy_or_buddy` function. Then print out
+Your `main` function in `P2.cpp` should create 2 People and run the `enemy_or_buddy` function. Then print out
 each `Person`'s after-tax income as well as call each `Person`'s `print_status` function.
