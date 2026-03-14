@@ -8,7 +8,8 @@ in cell `25` as requested by `Q1` you could use the following assembly code:
 ```asm
 mov R1, 25    ; R1 contains 25
 mov R2, 3     ; R2 contains 3
-mov [R1], R2  ; Store the content of R2 at the address stored in R1 - after this instruction, memory cell 25 contains 3
+mov [R1], R2  ; Store the content of R2 at the address stored in R1.
+              ; After this instruction, memory cell 25 contains 3
 ```
 
 ## Question 1
