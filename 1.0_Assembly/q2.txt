@@ -1,0 +1,31 @@
+Address     Assembly    Comments
+31          mov R0, 1   ; R0 contains 1 - address for a
+32          mov R1, 2   ; R1 contains 2 - address for b
+33          mov R2, 3   ; R2 contains 3 - address for c
+34          mov R3, 7   ; R3 contains 7 - test number a
+35          mov R4, 9   ; R4 contains 9 - test number b
+36          mov R5, 2   ; R5 contains 2 - test number c
+37          mov [R0],R3 ; memory cell 1 contains a
+38          mov [R1],R4 ; memory cell 2 contains b
+39          mov [R2],R5 ; memory cell 3 contains c
+
+
+40          mov R0, 1   ; R0 contains 1 - address to retrieve a
+41          mov R1, 2   ; R1 contains 2 - address to retrieve b
+42          mov R2, 3   ; R2 contains 3 - address to retrieve c
+43          mov R3,[R0] ; R3 contains the content of memory cell 1 (a)
+44          mov R4,[R1] ; R4 contains the content of memory cell 2 (b)
+45          mov R5,[R2] ; R5 contains the content of memory cell 3 (c)
+46          mov R0, 0   ; R0 contains 0 - product to return
+47          mov R1, 0   ; R1 contains 1 - a counter
+48          mov R2, 4   ; R2 contains 4 - address to put final value
+49          cmp R1, R4  ; comparing counter with final number (b)
+50          je 54       ; if equal jump to addition
+51          add R0, R3  ; add value of R3 (a) to R0
+52          inc R1      ; increase counter R1 by 1
+53          jmp 49      ; jump back to compare
+54          add R0, R5  ; add value of R5 (c) to R0 (final product)
+55          mov [R2],R0 ; mov R0 (final product) into address stored in R2
+56          halt        ; end
+
+Simulator Hex: 90019042908390c791099142b003b044b085900190429083c0c0c101c142900090409084804440365003100120315005b0800000

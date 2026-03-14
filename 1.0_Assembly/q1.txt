@@ -1,0 +1,18 @@
+Address     Assembly    Comments
+31          mov R0, 25  ; R0 contains 25
+32          mov R1, 3   ; R1 contains 3 (input)
+33          mov [R0],R1 ; initializing content in memory location 25 (pre-allocation and set up complete)
+34          mov R1, 0   ; R1 is repurposed as the counter
+35          mov R2, 10  ; R2 contains 10
+36          mov R3, 0   ; R3 contains 0 and is used as the result register
+37          mov R4, 6   ; R4 contains 6
+38          mov R5,[R0] ; R5 contains data from memory location 25
+39          cmp R1, R4  ; compare R1 to R4
+40          je 44       ; Jump to address 44 is cmp is equal
+41          add R3, R5  ; Add R3 and R5 data stored in R3
+42          inc R1      ; R1 increases by 1
+43          jmp 39      ; Jump to address 39 (Compare R1, R4)
+44          mov [R2],R3 ; Copy data from R3 into memory location 10
+45          halt        ; Halts execution
+
+Simulator Hex: 90199043b0019040908a90c09106c1408044402c50c510012027b0830000

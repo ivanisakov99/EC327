@@ -1,0 +1,23 @@
+Address     Assembly    Comments
+31          mov R0, 0   ; R0 holds 0
+32          mov R1, 1   ; R1 holds 1
+33          mov [R1],R0 ; store the contents of R0 at the address stored in R1
+34          mov R2,2    ; R2 holds 2
+35          mov [R2],R1 ; store the contents of R1 at the address stored in R2
+36          mov R4,3    ; R4 holds 3
+37          mov R5,8    ; R5 holds 8
+38          mov R1,1    ; R1 holds 1
+39          mov R2,2    ; R2 holds 2
+40          mov R0,[R1] ; store the contents at address R1 in register R0
+41          mov R3,[R2] ; store the content at address R2 in register R3
+42          add R0,R3   ; R0 holds the sum of R0 and R3
+43          mov [R4],R0 ; store the contents of R0 at the address stored in R4
+44          cmp R4,R5   ; compares the value of R4 and R5
+45          je 50       ; jump to line 50 if R4 and R5 are equal
+46          inc R4      ; increment R4 by 1
+47          inc R1      ; increment R1 by 1
+48          inc R2      ; increment R2 by 1
+49          jmp 40      ; jump to line 40
+50          halt        ; end
+
+Simulator Hex: 90009041b0409082b0819103914890419082c001c0c25003b1008105403210041001100220280000
