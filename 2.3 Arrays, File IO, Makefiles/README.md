@@ -9,7 +9,7 @@ Already provided files to use/alter:
   * It defines the `main()` function and `printModes()`; make sure to look at this file to understand how your
     functions will be used!
 * [`Makefile`](./Makefile) (sample already in the repo, but you **WILL** need to edit this to match the files used
-  here!)
+  here!).
 * Several sample input files: [`input_01.txt`](./input_01.txt), [`input_02.txt`](./input_02.txt),
   [`input_03.txt`](./input_03.txt), [`input_04.txt`](./input_04.txt) (has test cases).
 
@@ -20,13 +20,14 @@ Make sure to look carefully at the provided `main` function to understand how yo
 and any additional relationships between variables.
 
 * [`readfile.h`](./readfile.h)
-  * Fill out function prototype for `readFiletoArray(<types and parameters>);`, semicolon defines it.
+  * Fill out function prototype for `readFiletoArray(string filename, int* data);`, semicolon defines it.
 * [`readfile.cpp`](./readfile.cpp)
-  * Implement the function `readFiletoArray(<types and parameters>)` no semicolon.
+  * Implement the function `readFiletoArray(string filename, int* data)` no semicolon.
 * [`mode.h`](./mode.h) (function prototype: `findModes()`)
-  * Fill out function prototype for `findModes(<types and parameters>);`.
+  * Fill out function prototype for
+    `findModes(int input[], int size, int& frequency, int result[], int& result_count);`.
 * [`mode.cpp`](./mode.cpp) (function implementation: `findModes()`)
-  * Implement the function `findModes(<types and parameters>)`.
+  * Implement the function `findModes(int input[], int size, int& frequency, int result[], int& result_count)`.
 
 Description of functions:
 
@@ -50,19 +51,19 @@ Your output with the provided test files should look like this:
 ```none
 Input: 2, 3, 4, 4, 3, 1, 2, 1, 2, 3
 Modes: 2, 3
-Frequency : 3
+Frequency: 3
 
 Input: 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
 Modes: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-Frequency : 1
+Frequency: 1
 
 Input: 1, 3, 4, 9, 7, 8, 5, 0, 2, 3
 Modes: 3
-Frequency : 2
+Frequency: 2
 
 Input: 2, 3, 4, 4, 5, 1, 2, 1, 5, 3
 Modes: 1, 2, 3, 4, 5
-Frequency : 2
+Frequency: 2
 ```
 
 ## Some Assumptions You Can Make
@@ -74,11 +75,11 @@ The input data from the `.txt` files are integers in the range from `0` to `(# o
 * (this assumption will make finding the mode significantly easier!!!)
 * If you have `10` data points, the integers will be from `0-9`. If you have `5` data-points, `0-4`.
 
-## Some Helping Hints
+## Some Helpful Hints
 
-* Pointers `*` declaration and dereferencing character.
-* `&` gets the address of a character.
-* Pass-By-Value vs. Pass-By-Reference (which should you use to modify an input parameter?).
+* Pointers `*` act as a declaration and a dereferencing character.
+* `&` gets the address of a variable.
+* _Pass-By-Value_ vs. _Pass-By-Reference_, which should you use to modify an input parameter?.
 
 ## Useful Code
 
