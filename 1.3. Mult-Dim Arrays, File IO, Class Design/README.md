@@ -2,11 +2,11 @@
 
 ## Problem 1: Multi Dimensional Arrays
 
-Given a NxN matrix of floats, write a function `getNorm` that returns its Frobenius norm, defined as:
+Given a $N{\times}N$ matrix of floats, write a function `getNorm` that returns its Frobenius norm, defined as:
 
-<img width="245" alt="Screenshot 2021-03-04 at 14 42 01" src="https://user-images.githubusercontent.com/60196280/110020611-ccd1cd00-7cf7-11eb-9de5-4ccfe0214fa4.png">
-
-$$\left\| x \right\|$$
+$$
+\large \left\lVert A \right\rVert_F \equiv \sqrt{\sum_{i=1}^{m} \sum_{j=1}^{n} {\lvert a_{ij} \rvert}^2}
+$$
 
 The prototype of `getNorm` should be:
 
@@ -45,16 +45,16 @@ weatherProbability("Boston", "Snow");
 ```
 
 The function will return `0.5`. If the specified is not in the text file, have the function return `-1`. If the city
-is in the file but the weather is not, return `0`.
+is in the file, but the weather is not, return `0`.
 
 ## Problem 3: Class Design
 
 Design a class named `Student` that contains:
 
-* A string data field named `first`, which holds the student's first name
-* A string data field named `last`, which holds the student's last name
-* An unsigned integer data field `id`, which holds the student's ID
-* A float `gpa`, which holds the student's GPA
+* A string data field named `first`, which holds the student's first name.
+* A string data field named `last`, which holds the student's last name.
+* An unsigned integer data field `id`, which holds the student's ID.
+* A float `gpa`, which holds the student's GPA.
 
 `first`, `last`, and `id` should be declared as public members, while `gpa` should be made **private**.
 
