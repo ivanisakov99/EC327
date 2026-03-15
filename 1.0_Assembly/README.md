@@ -35,7 +35,7 @@ similar to what is shown in the following table:
 |     3     |   1   |
 |     4     |   2   |
 |     5     |   3   |
-|    ...    |       |
+|    ...    |  ...  |
 |     8     |   ?   |
 
 > [!NOTE]

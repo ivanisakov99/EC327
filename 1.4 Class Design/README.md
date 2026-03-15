@@ -79,7 +79,7 @@ The constructor should then create an instance of class `Student` with `first` s
   and last names. If the array pointed to by student looks like this:
 
   ```none
-  ["John Doe","Jane Doe", "Bruce Wayne"]
+  ["John Doe", "Jane Doe", "Bruce Wayne"]
   ```
 
 And after the function `dropStudent("Jane Doe")` is called, the array will look like:

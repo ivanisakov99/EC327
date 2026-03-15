@@ -5,7 +5,7 @@
 You are given a `Q1.h` file with overloaded function prototypes for `isOrdered`. Implement this overloaded
 function into a file named `Q1.cpp`.
 
-`Problem1.cpp` should only include your function implementation, the necessary `#include` directives if needed,
+`Q1.cpp` should only include your function implementation, the necessary `#include` directives if needed,
 and should not contain anything else such as the `main` function or global variable declarations. Test your code
 using a separate `main.cpp` file where you implement a sufficient number of test cases.
 
