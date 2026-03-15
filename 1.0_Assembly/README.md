@@ -3,7 +3,7 @@
 ## How to initialize your code
 
 For each question, store a value in each memory cell that will be used as input. For example, to store `6`
-in cell `25` as requested by `Q1` you could use the following assembly code:
+in cell `25` as requested by [Q1](#question-1) you could use the following assembly code:
 
 ```asm
 mov R1, 25    ; R1 contains 25
@@ -14,8 +14,8 @@ mov [R1], R2  ; Store the content of R2 at the address stored in R1.
 
 ## Question 1
 
-Write code that multiplies the content of memory cell `25` by `6` and stores it to memory cell 10. That is,
-if memory cell `25` initially contains `3`, after your code executes cell `10` should contain `18`.
+Write code that multiplies the content of memory cell `25` by `6` and stores it to memory cell `10`.
+That is, if memory cell `25` initially contains `3`, after your code executes cell `10` should contain `18`.
 
 ## Question 2
 
@@ -39,7 +39,7 @@ similar to what is shown in the following table:
 |     8     |   ?   |
 
 > [!NOTE]
-> Note that your code should compute the sum at each step (i.e., you should not hard-code number 2, 3, etc.).
+> Your code should compute the sum at each step (i.e., you should not hard-code number 2, 3, etc.).
 
 ## Question 4
 
