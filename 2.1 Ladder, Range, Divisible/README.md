@@ -12,23 +12,23 @@ How tall is your ladder?
 
 * If input equals `0`, print:
 
-  ```none
-  The height can't be zero.
-  ```
+    ```none
+    The height can't be zero.
+    ```
 
 * If input is less than `0`, print:
 
-  ```none
-  Invalid input
-  ```
+    ```none
+    Invalid input
+    ```
 
-  and exit the program.
+    and exit the program.
 
 * If input is greater than `0`, draw the ladder as shown below, then ask again:
 
-  ```none
-  How tall is your ladder?
-  ```
+    ```none
+    How tall is your ladder?
+    ```
 
 ### Sample Output 1
 
@@ -102,15 +102,17 @@ again:
 
 * If number is prime, print:
 
-```none
-This number is prime!
-```
+    ```none
+    This number is prime!
+    ```
 
-* If number is negative, print and exit the program:
+* If number is negative, print:
 
-```none
-I don't deal with negativity
-```
+    ```none
+    I don't deal with negativity.
+    ```
+
+    and exit the program.
 
 > [!NOTE]
 > *Hint: Look up modulus operator*
