@@ -3,7 +3,7 @@
 ## Question 1: Fibonacci Sequence
 
 Write a C++ program ([`Q1.cpp`](./question1/Q1.cpp)) that takes a positive integer `N` as input from the command line
-and prints on the screen the first N numbers in the Fibonacci sequence, one per line. The program should check
+and prints on the screen the first `N` numbers in the Fibonacci sequence, one per line. The program should check
 whether the provided input is a number and terminate with an error if is not. See the following sample runs for
 examples of the output that you need to provide.
 
@@ -87,6 +87,13 @@ the error conditions listed in the sample runs below, and terminate the program 
 Write a C++ program ([`Q3.cpp`](./question3/Q3.cpp)) that generates a random positive integer, and asks the user
 to guess it by providing it on the command line. The program should not terminate until the users guesses the
 correct number. See the following test cases for examples of how the program should behave.
+
+To generate a random number, you should use the `srand()` function from the `cstdlib` library, as
+[explained here](https://cplusplus.com/reference/cstdlib/srand/).
+
+> [!WARNING]
+> Text in `< >` in the examples demonstrates the user inputs entered via the keyboard. The actual user inputs should
+> not contain `<` or `>` signs.
 
 * Sample run 1:
 
