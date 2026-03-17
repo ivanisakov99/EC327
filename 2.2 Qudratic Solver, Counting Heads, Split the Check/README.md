@@ -20,16 +20,16 @@ Create 3 files:
 To approximate the square root of $\large n$, where $\large p$ is your guess,
 
 $$
-\large p = \frac{1}{2} (p + \frac{n}{p})
+\large p = \frac{1}{2} \left(p + \frac{n}{p}\right)
 $$
 
 then make sure that this $\large p$ is within your tolerance,
 
 $$
-\large tolerance \geq \frac{\lvert p - \frac{n}{p} \rvert}{\min(p, \frac{n}{p})}
+\large tolerance \geq \frac{\left\lvert p - \frac{n}{p} \right\rvert}{\min\left(p, \frac{n}{p}\right)}
 $$
 
-Use the above formula in addition to the quadratic formula to solve for the positive and negative `x` values,
+Use the above formula in addition to the quadratic formula to solve for the positive and negative $\large x$ values,
 then print them to console.
 
 $$
@@ -135,7 +135,7 @@ Create 3 files:
 * `cashier.cpp`
   * Contains the function body (implementation).
 
-You are writing a program for a waiter to collect the bill, then split the check among your friends
+You are writing a program for a waiter to collect the bill, then split the check among your friends.
 
 Function `tip` takes the total and tax percentage, then returns the total with the tax.
 
