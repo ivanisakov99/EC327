@@ -20,20 +20,20 @@ Create 3 files:
 To approximate the square root of $n$, where $p$ is your guess,
 
 $$
-p = \frac{1}{2} (p + \frac{n}{p})
+\large p = \frac{1}{2} (p + \frac{n}{p})
 $$
 
 then make sure that this $p$ is within your tolerance,
 
 $$
-tolerance \geq \frac{\lvert p - \frac{n}{p} \rvert}{\min(p, \frac{n}{p})}
+\large tolerance \geq \frac{\lvert p - \frac{n}{p} \rvert}{\min(p, \frac{n}{p})}
 $$
 
 Use the above formula in addition to the quadratic formula to solve for the positive and negative `x` values,
 then print them to console.
 
 $$
-x = \frac{-b + \sqrt{b^2 - 4ac}}{2ac}
+\large x = \frac{-b + \sqrt{b^2 - 4ac}}{2ac}
 $$
 
 ### Function Prototypes 1
@@ -87,7 +87,7 @@ Create 3 files:
 Given $n$ coin flips, the number of ways to get $k$ heads is:
 
 $$
-\binom{n}{k} = \frac{n!}{k!(n - k)!}
+\large \binom{n}{k} = \frac{n!}{k!(n - k)!}
 $$
 
 where $n!$ is the factorial defined as $1 \times 2 \times 3 \times \ldots \times (n - 1) \times n$.
