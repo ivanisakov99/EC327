@@ -17,13 +17,13 @@ Create 3 files:
 > [!WARNING]
 > **You cannot use `<cmath>` library**
 
-To approximate the square root of $n$, where $p$ is your guess,
+To approximate the square root of $\large n$, where $\large p$ is your guess,
 
 $$
 \large p = \frac{1}{2} (p + \frac{n}{p})
 $$
 
-then make sure that this $p$ is within your tolerance,
+then make sure that this $\large p$ is within your tolerance,
 
 $$
 \large tolerance \geq \frac{\lvert p - \frac{n}{p} \rvert}{\min(p, \frac{n}{p})}
@@ -84,16 +84,17 @@ Create 3 files:
 * `countHeads.cpp`
   * Contains the function body (implementation).
 
-Given $n$ coin flips, the number of ways to get $k$ heads is:
+Given $\large n$ coin flips, the number of ways to get $\large k$ heads is:
 
 $$
 \large \binom{n}{k} = \frac{n!}{k!(n - k)!}
 $$
 
-where $n!$ is the factorial defined as $1 \times 2 \times 3 \times \ldots \times (n - 1) \times n$.
+where $\large n!$ is the factorial defined as $\large 1 \times 2 \times 3 \times \ldots \times (n - 1) \times n$.
 
-Write a function that takes in non-negative integers $n$ and $k$, where $n \geq k$. Use this function to
-count the total number of ways to get at least $k$ heads out of $n$ coin flips.
+Write a function that takes in non-negative integers $\large n$ and $\large k$, where $\large n \geq k$.
+Use this function to count the total number of ways to get at least $\large k$ heads out of $\large n$
+coin flips.
 
 > [!NOTE]
 > **Make sure this works for large numbers**
